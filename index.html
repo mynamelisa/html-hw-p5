@@ -62,7 +62,9 @@
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
+            <button data-modal-open class="hero-button" type="button">
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -129,14 +131,40 @@
           <h2 class="main-title">Чим ми займаємося</h2>
           <ul class="activity-list list">
             <li class="item">
-              <img src="./images/img1.jpg" alt="робота з кодом" width="370" />
-              <div class="activity-box"></div>
+              <img
+                class="activity-img"
+                src="./images/img1.jpg"
+                alt="десктопні додатки"
+                width="370"
+                height="294"
+              />
+              <div class="activity-box">
+                <p class="activity-title">ДЕСКТОПНІ ДОДАТКИ</p>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/img2.jpg" alt="фронтенд" width="370" />
+              <img
+                class="activity-img"
+                src="./images/img2.jpg"
+                alt="мобільні додатки"
+                width="370"
+                height="294"
+              />
+              <div class="activity-box">
+                <p class="activity-title">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/img3.jpg" alt="дизайн" width="370" />
+              <img
+                class="activity-img"
+                src="./images/img3.jpg"
+                alt="дизайн"
+                width="370"
+                height="294"
+              />
+              <div class="activity-box">
+                <p class="activity-title">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -323,7 +351,6 @@
       </section>
 
       <!-- Клієнти -->
-
       <section class="section clients">
         <div class="container">
           <h2 class="main-title"><strong>Наші клієнти</strong></h2>
@@ -434,5 +461,17 @@
         </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close>
+          <svg class="close-button-img" width="11" height="11">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
